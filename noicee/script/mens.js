@@ -55,14 +55,14 @@ function appenddata(data) {
         ext_discount.setAttribute("id", "ext_discount")
 
         var discount_img = document.createElement("img")
-        discount_img.setAttribute("id", "discount_img")
-        discount_img.src = "https://i.postimg.cc/Kzk9hV5x/discount-3.png"
+        // discount_img.setAttribute("id", "discount_img")
+        // discount_img.src = "https://i.postimg.cc/Kzk9hV5x/discount-3.png"
 
-        var text = document.createElement("p")
-        text.setAttribute("id", "text")
-        text.innerText = `₹100 discount on 1st order`
+        // var text = document.createElement("p")
+        // text.setAttribute("id", "text")
+        // text.innerText = `₹100 discount on 1st order`
 
-        ext_discount.append(discount_img, text)
+        // ext_discount.append(discount_img, text)
 
 
         //creating a div to store the free delivery--------------------------------------------------------------------
@@ -71,30 +71,30 @@ function appenddata(data) {
         delivery.setAttribute("id", "delivery")
 
         var product_delivery = document.createElement("p")
-        product_delivery.setAttribute("id", "product_delivery")
-        product_delivery.innerText = "Free Delivery"
+        // product_delivery.setAttribute("id", "product_delivery")
+        // product_delivery.innerText = "Free Delivery"
 
         delivery.append(product_delivery);
 
         //creating a div to store the product rating and product review-----------------------------------------------------
 
         var product_rating_div = document.createElement("div");
-        product_rating_div.setAttribute("id", "product_rating_div")
+        // product_rating_div.setAttribute("id", "product_rating_div")
 
 
         product_rating_container = document.createElement("div")
-        product_rating_container.setAttribute("id", "product_rating_container")
+        // product_rating_container.setAttribute("id", "product_rating_container")
 
 
         var product_rating = document.createElement("p")
-        product_rating.setAttribute("id", "product_rating")
-        product_rating.innerText = `${el.rating}⋆`;
+        // product_rating.setAttribute("id", "product_rating")
+        // product_rating.innerText = `${el.rating}⋆`;
 
         product_rating_container.append(product_rating);
 
         var product_review = document.createElement("p");
-        product_review.setAttribute("id", "product_review")
-        product_review.innerText = `${el.review} Reviews`
+        // product_review.setAttribute("id", "product_review")
+        // product_review.innerText = `${el.review} Reviews`
 
         product_rating_div.append(product_rating_container, product_review)
 
@@ -105,33 +105,33 @@ function appenddata(data) {
 }
 
 // sort
-async function handleprice() {
+// async function handleprice() {
 
-    var shortv = document.querySelector("#select_tag").value
-    let res = await fetch(url);
-    let data = await res.json();
+//     var shortv = document.querySelector("#select_tag").value
+//     let res = await fetch(url);
+//     let data = await res.json();
 
-    if (shortv == "high") {
-        data.sort(function (a, b) {
-            return Number(b.price) - Number(a.price);
-        });
-    }
-    if (shortv == "low") {
-        data.sort(function (a, b) {
-            return Number(a.price) - Number(b.price);
-        });
-    }
-    if (shortv == "rating") {
-        data.sort(function (a, b) {
-            return Number(b.rating) - Number(a.rating)
-        })
-    }
-    document.querySelector("#container").innerHTML = "";
-    appenddata(data);
-}
+//     if (shortv == "high") {
+//         data.sort(function (a, b) {
+//             return Number(b.price) - Number(a.price);
+//         });
+//     }
+//     if (shortv == "low") {
+//         data.sort(function (a, b) {
+//             return Number(a.price) - Number(b.price);
+//         });
+//     }
+//     if (shortv == "rating") {
+//         data.sort(function (a, b) {
+//             return Number(b.rating) - Number(a.rating)
+//         })
+//     }
+//     document.querySelector("#container").innerHTML = "";
+//     appenddata(data);
+// }
 
-function product_description(el) {
-    data = JSON.stringify(el)
-    localStorage.setItem("product_detail", data)
-    window.location.href = 'product_description.html'
-}
+// function product_description(el) {
+//     data = JSON.stringify(el)
+//     localStorage.setItem("product_detail", data)
+//     window.location.href = 'product_description.html'
+// }

@@ -15,96 +15,47 @@
     <!-- Navigation Bar -->
     <section class="navbar">
       <div class="uppernav">
-        <a href="index.html"><img
-          src=https://i.pinimg.com/736x/ca/0a/bf/ca0abf6d051e1be8eed4f24ef41c73ca--elegant-logo-accessories-store.jpg
-          alt="logo"
-          class="logo"
-        /></a>
-        <div class="navSearch">
+          <!-- <a href="index.html"><img src="https://cdn.hevodata.com/customer/logo/8c76f62bd88177a78bb6e2810a244446.png" alt="logo" class="logo" /></a>-->
+          <h1 style="color: rgb(66, 141, 187);">Thrift Store</h1>
+          <div class="navSearch"> 
+      
+              <img src="https://i.postimg.cc/90c6jfMm/search-interface-symbol.png" alt="search" class="NavSearchIcon" />
+              <input type="text" id="keyword" class="searchContainer" placeholder="Your Suggestions" onkeypress="handleKeyPress(event)" />
+          </div>
+          <!-- <div class="navRightSec">
+              <div class="navAppPromo">
+                  <img src="https://i.postimg.cc/sXqr2Fz4/smartphone.png" alt="app" class="navAppIcon" />
+                  <span id="tagDwn">Download App</span>
+              </div>-->
+              <span class="navSuplier">Thrifting clothes</span>
+              <div class="navProfile" onclick="window.location.href='SignUpPage.html'">
+                  <img src="https://i.postimg.cc/wjtLkcVz/user.png" alt="account" class="navAccountIcon" />
+                  <span class="SignUpHover">Profile</span>
+        </div>
+        <div class="navcart" onclick="window.location.href='CartPage.html'">
           <img
-            src="https://i.postimg.cc/90c6jfMm/search-interface-symbol.png"
-            alt="search"
-            class="NavSearchIcon"
+            src="https://i.postimg.cc/sXBgkwMf/bag.png"
+            alt="cart"
+            class="cartIcon"
           />
-          <input
-            type="text"
-            id="keyword"
-            class="searchContainer"
-            placeholder="Try Saree,Kurthi or Seach by Product Code"
-            onkeypress="handleKeyPress(event)"
-          />
+          <span
+            class="SignUpHover"
+            onclick="window.location.href='CartPage.html'"
+            >Cart</span
+          >
         </div>
-        <div class="navRightSec">
-          <div class="navAppPromo">
-            <img
-              src="https://i.postimg.cc/sXqr2Fz4/smartphone.png"
-              alt="app"
-              class="navAppIcon"
-            />
-            <span id="tagDwn">Download App</span>
-          </div>
-          <span class="navSuplier">Become a Supplier</span>
-          <div class="navProfile" onclick="window.location.href='SignUpPage.html'">
-            <img
-              src="https://i.postimg.cc/wjtLkcVz/user.png"
-              alt="account"
-              class="navAccountIcon"
-            />
-            <span
-              class="SignUpHover"
-              >Profile</span
-            >
-          </div>
-          <div class="navcart" onclick="window.location.href='CartPage.html'">
-            <img
-              src="https://i.postimg.cc/sXBgkwMf/bag.png"
-              alt="cart"
-              class="cartIcon"
-            />
-            <span
-              class="SignUpHover"
-              onclick="window.location.href='CartPage.html'"
-              >Cart</span
-            >
-          </div>
-          <div id="cart-item-counter">0</div>
-        </div>
+        <div id="cart-item-counter">0</div>
       </div>
-      <div class="bottomNav">
-        <div class="nav-menu">
-          <ul>
-            <li class="dropdown" onclick="window.location.href='viewall.html'">View All</li>
-            <li class="dropdown" onclick="window.location.href='WomenWestern.html'">Women Western
-              <div class="submenu">
-                <div class="subCat">
-                  <span class="catHeading">Topwear</span>
-                  <span>Dresses</span>
-                  <span>Tops</span>
-                  <span>Sweaters</span>
-                  <span>Jumpsuits</span>
-                </div>
-                <div class="subCat" style="margin-left: 1em;">
-                  <span class="catHeading">Bottomwear</span>
-                  <span>Jeans</span>
-                  <span>Jeggings</span>
-                  <span>Palazzos</span>
-                  <span>Shorts</span>
-                  <span>Skirts</span>
-                </div>
-              </div>
-            </li>
-            <li onclick="window.location.href='Jewellery.html'">Jewellery & Accessories</li>
-            <li onclick="window.location.href='Men.html'">Men</li>
-            <li>Beauty & Health</li>
-            <li>Bath & Body</li>
-            <li>Bags & Footwear</li>
-            <li>Home & Kitchen</li>
-            <li>Kids</li>
-            <li>Electronics</li>
-          </ul>
-        </div>
+    </div>
+    <div class="bottomNav">
+      <div class="nav-menu">
+        <ul>
+          <li class="dropdown" onclick="window.location.href='Men.html'">Mens Wear</li>
+          <li class="dropdown" onclick="window.location.href='WomenWestern.html'">Women Wear
+          
       </div>
-    </section>
+      </div>
+  </section>
     <section class="searchWindow">
       <div class="searchCloseBtn">
         <img src="https://i.postimg.cc/Lgdct409/close.png" alt="">
@@ -137,7 +88,7 @@
 </html>
 <script type="text/javascript" src="./script/search.js"></script>
 
-<script>
+<!-- <script>
     document.getElementById("form").addEventListener("submit", signIn);
     var regUser = JSON.parse(localStorage.getItem("user")) || [];
     function signIn(e) {
@@ -164,7 +115,7 @@
       }
       alert("ERROR! Wrong E-Mail Id or Password");
     }
-  }
+  } -->
 </script>
 <!-- <script>
     document.getElementById("form").addEventListener("submit", Login);
