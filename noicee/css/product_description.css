@@ -10,7 +10,6 @@
 }
 
 #left_image_div {
-  /* width: 70px; */
   height: 500px;
 }
 
@@ -22,7 +21,6 @@
 }
 
 #main_image_div {
-  /* width: 447px; */
   height: 600px;
 }
 
@@ -52,7 +50,6 @@
 }
 
 #right_div_container {
-  /* width: 537px; */
   height: 700px;
 }
 
@@ -104,7 +101,6 @@
   color: rgb(102, 102, 102);
   font-style: normal;
   font-weight: 500;
-  /* margin-top: -15px; */
   font-size: 18px;
 }
 
@@ -128,15 +124,7 @@
   font-family: -apple-system, "Helvetica Neue", sans-serif, "Mier Book";
 }
 
-#product_rating_container {
-  width: 60px;
-  align-items: center;
-  text-align: center;
-  padding-top: 3px;
-  height: 25px;
-  background-color: rgb(35, 187, 117);
-  border-radius: 12px;
-}
+
 
 #product_price_div {
   display: inline;
@@ -164,26 +152,6 @@
   line-height: 25px;
 }
 
-#per_discount {
-  display: inline;
-  font-weight: bolder;
-  color: rgb(35, 187, 117);
-  line-height: 25px;
-  font-size: 16px;
-}
-
-#ext_discount {
-  width: 250px;
-  margin-top: 8px;
-  display: block;
-}
-
-#discount_img {
-  display: inline;
-  border: 0px;
-  height: 16px;
-  width: 16px;
-}
 
 #text {
   display: inline;
@@ -218,33 +186,9 @@
   background-color: rgb(249, 249, 249);
 }
 
-#product_rating {
-  display: inline;
-  color: white;
-  font-size: 16px;
-  font-weight: 600;
-  font-family: "Varela Round", sans-serif;
-}
 
-#product_review {
-  text-align: center;
-  color: gray;
-  display: inline;
-  font-family: "Mier Book";
-  margin-left: 10px;
-  font-size: 14px;
-  line-height: 20px;
-}
 
-#product_rating_div {
-  width: 260px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-}
 
-#product_rating_div,
-#delivery,
 #ext_discount,
 #product_price_div,
 #product_title {
